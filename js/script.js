@@ -22,5 +22,26 @@ $(document).ready(function() {
 
 	$("p").on("click", function() {
 		$("p").css("color", "red");
+	});
+
+	$("h2").mouseenter(function() {
+		$("h2").addClass("header_light");
+	});
+
+	$("h2").hover(function(){
+		$(this).addClass("header_hover");
+	}, function(){
+		$(this).removeClass("header_hover");
+	});
+
+	$("h2").mouseleave(function() {
+		$("h2").removeClass("header_light");
 	})
+	
+	$(".bottom_button").hover(function(){
+		$("body").addClass("mouse_on");
+	}, function(){
+		$("body").removeClass("mouse_on");
+		// $("body").addClass("mouse_on2");
+	});
 }); 

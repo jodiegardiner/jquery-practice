@@ -87,6 +87,21 @@ div{
 
 }
 
+.header_light{
+	background-color: LightBlue;
+}
+
+.header_hover{
+	font-size: 20px;
+}
+
+.mouse_on{
+	background-color: black;
+}
+
+.mouse_off{
+	background-color: grey;
+}
 /*************************
 Navigation
 
