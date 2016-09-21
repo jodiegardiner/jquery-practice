@@ -1,6 +1,4 @@
-.underline{
-  text-decoration:underline;
-}
-.border{
-  border: solid 2px #ccc;
+
+.odd_rows{
+	background-color: red;
 }
