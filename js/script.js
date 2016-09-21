@@ -38,10 +38,20 @@ $(document).ready(function() {
 		$("h2").removeClass("header_light");
 	})
 	
-	$(".bottom_button").hover(function(){
-		$("body").addClass("mouse_on");
-	}, function(){
-		$("body").removeClass("mouse_on");
+	// $(".bottom_button").hover(function(){
+	// 	$("body").addClass("mouse_on");
+	// }, function(){
+	// 	$("body").removeClass("mouse_on");
 		// $("body").addClass("mouse_on2");
+	// });
+	$(".bottom_button").click(function(){
+		$(this).prev().slideToggle("medium");
+	});
+
+	$(".bottom_button").mouseenter(function(){
+		$(this).fadeTo(300, 0.5);
+	});
+	$(".bottom_button").mouseleave(function(){
+		$(this).fadeTo(300, 1);
 	});
 }); 
