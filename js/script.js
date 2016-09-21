@@ -20,5 +20,7 @@ $(document).ready(function() {
 	  	$(".stream3").addClass('highlight_stream');
 	});
 
-
+	$("p").on("click", function() {
+		$("p").css("color", "red");
+	})
 }); 
